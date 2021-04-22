@@ -1,6 +1,6 @@
 import { createContext } from 'react'
 
-type Episode= {
+type Episode = {
     title: string;
     members: string;
     thumbnail: string;

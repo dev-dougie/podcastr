@@ -1,4 +1,4 @@
-.playerContainer{
+.playerContainer {
     padding: 3rem 4rem;
     width: 26.5rem;
     height: 100vh;
@@ -11,43 +11,43 @@
     align-items: center;
     justify-content: space-between;
 
-    header{
+    header {
         display: flex;
         align-items: center;
         gap: 1rem;
     }
 
-    strong{
+    strong {
         font-family: Lexend, sans-serif;
         font-weight: 600;
     }
 
-    footer{
+    footer {
         //Ocupa toda a largura do footer
         //Evita o alinhamento geral ao centro
         align-self: stretch;
 
-        &.empty{
+        &.empty {
             opacity: 0.5;
         }
     }
 }
 
-.currentEpisode{
+.currentEpisode {
     text-align: center;
 
-    img{
+    img {
         border-radius: 1.5rem;
     }
 
-    strong{
+    strong {
         display: block;
         margin-top: 2rem;
         font: 600 1.25rem Lexend, sans-serif;
         line-height: 1.75rem;
     }
 
-    span{
+    span {
         display: block;
         margin-top: 1rem;
         opacity: 0.6;
@@ -55,7 +55,7 @@
     }
 }
 
-.emptyPlayer{
+.emptyPlayer {
     width: 100%;
     height: 20rem;
     border: 1.5px dashed var(--purple-300);
@@ -70,23 +70,23 @@
     justify-content: center;
 }
 
-.progress{
+.progress {
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 0.875rem;
 
-    span{
+    span {
         display: inline-block;
         width: 4rem;
         text-align: center;
     }
 
-    .slider{
+    .slider {
         flex: 1;
         gap: 0.5;
 
-        .emptySlider{
+        .emptySlider {
             width: 100%;
             height: 4px;
             background: var(--purple-300);
@@ -95,37 +95,35 @@
     }
 }
 
-.buttons{
+.buttons {
     display: flex;
     align-self: center;
     justify-content: center;
     margin-top: 2.5rem;
     gap: 1.5rem;
 
-    button{
+    button {
         background: transparent;
         border: 0;
         font-size: 0;
 
-        &:disabled{
-            cursor: not-allowed
+        &:disabled {
+            cursor: not-allowed;
         }
-        
-        &:hover:not(:disabled){
+
+        &:hover:not(:disabled) {
             filter: brightness(0.8);
         }
 
-        &.playButton{
+        &.playButton {
             width: 4rem;
             height: 4rem;
             border-radius: 1rem;
             background: var(--purple-400);
 
-            &:hover{
+            &:hover {
                 filter: brightness(0.95);
             }
         }
-
-        
     }
 }

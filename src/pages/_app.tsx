@@ -11,24 +11,24 @@ function MyApp({ Component, pageProps }) {
   const [episodeList, setEpisodeList] = useState([]);
   const [currentEpisodeIndex, setCurrentEpisodeIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false);
-  
 
-  function handlePlay(episode){
+
+  function handlePlay(episode) {
     setEpisodeList([episode])
     setCurrentEpisodeIndex(0);
     setIsPlaying(true);
   }
 
-  function togglePlay(){
-      setIsPlaying(!isPlaying)
+  function togglePlay() {
+    setIsPlaying(!isPlaying)
   }
 
-  function setPlayingState(state: boolean){
-      setIsPlaying(state)
+  function setPlayingState(state: boolean) {
+    setIsPlaying(state)
   }
 
   return (
-    <PlayerContext.Provider value = {{ episodeList, currentEpisodeIndex, isPlaying, handlePlay, togglePlay, setPlayingState }}>
+    <PlayerContext.Provider value={{ episodeList, currentEpisodeIndex, isPlaying, handlePlay, togglePlay, setPlayingState }}>
       <div className={styles.wrapper}>
         <main>
           <Header />

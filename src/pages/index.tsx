@@ -59,7 +59,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                     <span>{episode.durationAsString}</span>
                   </div>
 
-                  <button type="button" onClick = {() => handlePlay(episode)}>
+                  <button type="button" onClick={() => handlePlay(episode)}>
                     <img src="/play-green.svg" alt="Ouvir episódio" />
                   </button>
                 </li>
